@@ -1,0 +1,117 @@
+.table-container {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: auto;
+  max-height: 500px; /* Limit height and allow vertical scroll */
+  border: 1px solid #c65c23; /* Border color updated */
+  padding: 10px;
+  background: #0f0e15; /* Match app background */
+}
+
+.weather-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+.weather-table th,
+.weather-table td {
+  border: 1px solid #c65c23; /* Table lines */
+  padding: 8px;
+  text-align: center;
+}
+
+/* Table header */
+.weather-table th {
+  background-color: #0f0e15; /* Navbar background */
+  color: #f7e9b6; /* Navbar text color */
+  font-weight: bold;
+}
+
+/* Alternating row colors */
+.weather-table tr:nth-child(even) {
+  background-color: #0f0e15; /* App background */
+}
+
+.weather-table tr:nth-child(odd) {
+  background-color: #303023; /* Darker alternate row */
+}
+
+/* Hover effect */
+.weather-table tr:hover {
+  background-color: #c65c23; /* Highlight on hover */
+}
+
+.separator {
+  margin-top: 20px; /* Space before the separator */
+  margin-bottom: 20px; /* Space after the separator */
+  text-align: center;
+}
+
+.separator hr {
+  width: 80%; /* Makes the separator line a bit thinner */
+  margin: 10px auto; /* Center-aligns the line */
+  border: 0;
+  border-top: 1px solid #c65c23; /* Use your border color for the separator */
+}
+
+.separator-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: #f7e9b6; /* Match the header text color */
+  margin-top: 5px;
+}
+
+.patient-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.patient-card {
+  background: #0f0e15;
+  border: 2px solid #ff9d3d;
+  border-radius: 12px;
+  padding: 15px;
+  width: 300px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  color: #ff6b00;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.vitals-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.vital-label {
+  text-align: left;
+  padding: 6px;
+  font-weight: bold;
+}
+
+.vital-value {
+  text-align: right;
+  padding: 6px;
+}
+
+.risk-text {
+  color: #d90429;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+/* Make the table responsive */
+@media (max-width: 768px) {
+  .table-container {
+      overflow-x: scroll;
+  }
+}
